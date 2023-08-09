@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2461E99E7BF918FFA9F2C2A1 /* Pods_Almofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0B1DDF69A895EB4B36AAE1 /* Pods_Almofire.framework */; };
 		929C5DBC2A83848400C60623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929C5DBB2A83848400C60623 /* AppDelegate.swift */; };
 		929C5DBE2A83848400C60623 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929C5DBD2A83848400C60623 /* SceneDelegate.swift */; };
 		929C5DC02A83848400C60623 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929C5DBF2A83848400C60623 /* ViewController.swift */; };
@@ -49,6 +50,9 @@
 		929C5DD82A83848800C60623 /* AlmofireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlmofireUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		929C5DDC2A83848800C60623 /* AlmofireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlmofireUITests.swift; sourceTree = "<group>"; };
 		929C5DDE2A83848800C60623 /* AlmofireUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlmofireUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AF0B1DDF69A895EB4B36AAE1 /* Pods_Almofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Almofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B84AD2FD193C96831F14C3D3 /* Pods-Almofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Almofire.debug.xcconfig"; path = "Target Support Files/Pods-Almofire/Pods-Almofire.debug.xcconfig"; sourceTree = "<group>"; };
+		BC18A5E0A9894EA8C26ADE32 /* Pods-Almofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Almofire.release.xcconfig"; path = "Target Support Files/Pods-Almofire/Pods-Almofire.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2461E99E7BF918FFA9F2C2A1 /* Pods_Almofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		268EDFACAB39E0AB9BDDCF85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B84AD2FD193C96831F14C3D3 /* Pods-Almofire.debug.xcconfig */,
+				BC18A5E0A9894EA8C26ADE32 /* Pods-Almofire.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7C5D077557A4FF71D996DF6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF0B1DDF69A895EB4B36AAE1 /* Pods_Almofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		929C5DAF2A83848400C60623 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +106,8 @@
 				929C5DD12A83848800C60623 /* AlmofireTests */,
 				929C5DDB2A83848800C60623 /* AlmofireUITests */,
 				929C5DB92A83848400C60623 /* Products */,
+				268EDFACAB39E0AB9BDDCF85 /* Pods */,
+				7C5D077557A4FF71D996DF6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 929C5DE22A83848800C60623 /* Build configuration list for PBXNativeTarget "Almofire" */;
 			buildPhases = (
+				0F541784D731C54A03CAFB7F /* [CP] Check Pods Manifest.lock */,
 				929C5DB42A83848400C60623 /* Sources */,
 				929C5DB52A83848400C60623 /* Frameworks */,
 				929C5DB62A83848400C60623 /* Resources */,
+				46330FFCFFE8B949EB5E4F2C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +279,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F541784D731C54A03CAFB7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Almofire-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46330FFCFFE8B949EB5E4F2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Almofire/Pods-Almofire-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Almofire/Pods-Almofire-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Almofire/Pods-Almofire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		929C5DB42A83848400C60623 /* Sources */ = {
@@ -432,6 +501,7 @@
 		};
 		929C5DE32A83848800C60623 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B84AD2FD193C96831F14C3D3 /* Pods-Almofire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +529,7 @@
 		};
 		929C5DE42A83848800C60623 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC18A5E0A9894EA8C26ADE32 /* Pods-Almofire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
