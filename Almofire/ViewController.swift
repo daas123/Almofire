@@ -51,6 +51,7 @@ class ViewController: UIViewController {
     }
     func fetchdata()
     {
+        
         AF.request("https://jsonplaceholder.typicode.com/todos/3").validate(statusCode: 200 ..< 300).responseJSON { response in
             switch response.result {
             case .success(let value):
